@@ -13,7 +13,14 @@ class PagesController extends AbstractController
     public function home(): Response
     {
 
-        dd(date_default_timezone_get()); 
         return $this->render('pages/home.html.twig');
+    }
+     /**
+     * @Route("/about-us", name="app_about")
+     */
+    public function about(): Response
+    {
+
+        return $this->render('pages/about.html.twig');
     }
 }

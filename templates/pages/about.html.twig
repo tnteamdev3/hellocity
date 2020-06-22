@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}  About Us | {{ parent() }}  {% endblock %}
+
+
+{% block body %}
+	<img src="/images/user.png" alt="Tunis Flag" width="200" class="my-12 rounded-full shadow-md">
+
+		<h1 class="text-lg text-gray-600"> 
+			Built with 
+			<span class="text-pink-500">&hearts;
+			</span> by Hayat Henchir
+		</h1>
+		<p class="mt-5">
+			<a href="{{ path('app_home') }}" class="text-indigo-500 hover:text-indigo-600 underline">
+			Revenir à la page d'accueil
+		    </a>
+	     </p>
+{% endblock %}
